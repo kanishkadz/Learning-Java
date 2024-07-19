@@ -22,3 +22,4 @@ class Arrswap {
         System.out.println(A[i]);
     }
 }
+}
