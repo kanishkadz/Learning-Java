@@ -4,7 +4,7 @@ class DPArray{
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter row:");
         int r = sc.nextInt();
-        System.out.pritn("Enter column:");
+        System.out.print("Enter column:");
         int c = sc.nextInt();
         int i,j;
         int A[][] = new int[r][c];
@@ -16,7 +16,7 @@ class DPArray{
         }
         for(i=0;i<r;i++){
             for(j=0;j<c;j++){
-                System.out.print(A[i][j]+"/t");
+                System.out.print(A[i][j]+"\t");
             }
             System.out.println();
         } 
