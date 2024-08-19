@@ -1,22 +1,27 @@
 import java.util.Scanner;
-
 class CharFreq {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter character: ");
-        String input = sc.next(); 
+        System.out.print("Enter a string: ");
+        String input = sc.nextLine();
         int len = input.length(); 
-        int words, upper, lower;
-        for(int i=0; i<len; i++){
-            if(input.isWhiteSpace(input.charAt(i)))
+        int words = 0, upper = 0, lower = 0;
+    
+        for (int i = 0; i < len; i++) {
+            char c = input.charAt(i);
+            if (Character.isWhitespace(c))
                 words++;
-            else if(input.isUpperCase(input.charAt(i)))
+            else if (Character.isUpperCase(c)) 
                 upper++;
-            else if(input.isLowerCase(input.charAt(i)))
+            else if (Character.isLowerCase(c))
                 lower++;
         }
-        System.out.println("No of words is :"+words);
-        System.out.println("Upper Case:"+upper);
-        System.out.println("Lower Case:"+lower);
+        if (len > 0) {
+            words += 1;
+        }
+        System.out.println("No of words: " + words);
+        System.out.println("Upper Case: " + upper);
+        System.out.println("Lower Case: " + lower);
+        sc.close();
     }
 }
