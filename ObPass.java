@@ -22,13 +22,13 @@ class ObPass{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Room R1 = new Room();
-        System.out.print("Enter length and breadth for Room 1");
+        System.out.print("Enter length and breadth for Room 1:");
         int l1 = sc.nextInt();
         int b1 = sc.nextInt();
         R1.setRoom(l1, b1);
         R1.showRoom();
         Room R2 = new Room();
-        System.out.print("Enter length and breadth for Room 2");
+        System.out.print("Enter length and breadth for Room 2:");
         int l2 = sc.nextInt();
         int b2 = sc.nextInt();
         R2.setRoom(l2, b2);
