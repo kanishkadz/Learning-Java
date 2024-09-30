@@ -3,7 +3,6 @@ import java.util.Scanner;
 class Emp {
     int age, salary;
     String name;
-
     public void getEmp() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter name: ");
