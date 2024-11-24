@@ -3,6 +3,7 @@ import java.util.ArrayList;
 class CustomArrayList {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
+        //adding elements
         list.add(0);
         list.add(1);
         list.add(2);
