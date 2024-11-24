@@ -10,5 +10,10 @@ class CustomArrayList {
         list.add(3);
         list.add(4);
         System.out.println(list);
+
+        //get elements
+        System.out.println(list.get(0));
+
+        //add in betweeen
     }
 }
