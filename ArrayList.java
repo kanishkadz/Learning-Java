@@ -1,7 +1,8 @@
-import java.util.*;
-class ArrayList {
-    public static void main(String args[]){
-        ArrayList<Integer> list = new ArrayList();
+import java.util.ArrayList;
+
+class CustomArrayList {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
         list.add(0);
         list.add(1);
         list.add(2);
@@ -9,5 +10,4 @@ class ArrayList {
         list.add(4);
         System.out.println(list);
     }
-    
 }
