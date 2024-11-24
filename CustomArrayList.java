@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 class CustomArrayList {
     public static void main(String[] args) {
@@ -15,5 +16,19 @@ class CustomArrayList {
         System.out.println(list.get(0));
 
         //add in betweeen
+        list.add(1,1);
+
+        //set element
+        list.set(0,5);
+
+        //remove element
+        list.remove(0);
+
+        //count element
+        System.out.println(list.size());
+
+        //sort elements
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
